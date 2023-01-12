@@ -1,12 +1,13 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/heroImage.jpeg');
-    background-size:cover;
-    position:relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/IMG_0825.jpg');
+    background-size: cover;
+    position: relative;
 }
 /* text css above hero image*/
 .hero_title {
+    color: black;
     font-size: 4.5rem;
 }
 
