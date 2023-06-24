@@ -43,8 +43,13 @@
         <div class="row">
             {% for project in project_row %}
             <div class="col-lg-4 mt-4">
+<<<<<<< Updated upstream
                 <div class="card h-100">
                     <img class="card-img-top" src="{{ project.image }}" alt="{{ project.title }}" style="width:100%">
+=======
+                <div class="card">
+			<img class="card-img-top" src="{% static project.image %}" alt="{{ project.title }}" style="width:100%">
+>>>>>>> Stashed changes
                     <div class="card-body">
                         <a href="{{ project.url }}"><h4 class="card-title">{{ project.title }}</h4></a>
                         <p class="card-text">{{ project.description }}</p>

@@ -18,6 +18,7 @@ def index(request):
                         'title': project.title,
                         'description': project.description,
                         'url': project.url,
+                        'image': project.image,
                     } for project in project_row
                 ] for project_row in paginator
             ]
