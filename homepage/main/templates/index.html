@@ -3,7 +3,7 @@
 {% block page_content %}
 <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark bg-dark">
     <div class="container">
-        <span class="navbar-brand">Dr Yegor Stepanov</span>
+        <span class="navbar-brand">Yegor Stepanov</span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,8 +26,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Dr Yegor Stepanov</h2>
-                <p class="hero_desc"></p>
+                <h2 class="hero_title">Yegor Stepanov</h2>
+                <p class="hero_desc">My homepage</p>
             </div>
         </div>
     </div>
@@ -88,15 +88,13 @@
 
                 <!-- form fields -->
                 <form id="contactForm">
-                    <input type="text" class="form-control mt-3" placeholder="Name">
-                    <input type="email" class="form-control mt-3" placeholder="Email">
-                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <input name="contactName" type="text" class="form-control mt-3" placeholder="Name">
+                    <input name="contactEmail" type="email" class="form-control mt-3" placeholder="Email">
                     <div class="mb-3 mt-3">
-                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Your message"></textarea>
+                        <textarea name="contactMessage" class="form-control" rows="5" id="comment" name="text" placeholder="Your message"></textarea>
                     </div>
                 </form>
-                <button id="contactButton" type="button" class="btn btn-success mt-3">Contact Me</button>
-
+                <button id="contactButton" type="button" class="btn btn-success mt-3">Send</button>
             </div>
 
         </div>
@@ -107,11 +105,9 @@
     <div class="container-fluid">
         <!-- social media icons -->
         <div class="social-icons mt-4">
-            <!--<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>-->
             <a href="https://www.instagram.com/ystepanoff" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.twitter.com/ystepanoff" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/yegor.stepanov" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <!--<a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>-->
         </div>
     </div>
 </footer>
