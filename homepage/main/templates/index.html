@@ -83,15 +83,15 @@
                     '&'+'#'+'4'+'6'+';'+'&'+'#'+'1'+'1'+'0'+';'+'e'+'t'+'<'+'/'+'a'+'>' + '.');
                 </script>
                 <noscript>[Turn on JavaScript to see the email address]</noscript>
-                Alternatively, you can use the following form [not active at the moment]:
+                Alternatively, you can use the following form:
 
 
                 <!-- form fields -->
                 <form id="contactForm">
-                    <input name="contactName" type="text" class="form-control mt-3" placeholder="Name">
-                    <input name="contactEmail" type="email" class="form-control mt-3" placeholder="Email">
+                    <input id="contactName" type="text" class="form-control mt-3" placeholder="Name">
+                    <input id="contactEmail" type="email" class="form-control mt-3" placeholder="Email">
                     <div class="mb-3 mt-3">
-                        <textarea name="contactMessage" class="form-control" rows="5" id="comment" name="text" placeholder="Your message"></textarea>
+                        <textarea id="contactMessage" class="form-control" rows="5" id="comment" name="text" placeholder="Your message"></textarea>
                     </div>
                 </form>
                 <button id="contactButton" type="button" class="btn btn-success mt-3">Send</button>
@@ -114,20 +114,4 @@
         </div>
     </div>
 </footer>
-
-<script>
-    $(document).ready(function() {
-        $(".mr-auto .nav-item").bind( "click", function(event) {
-            var clickedItem = $( this );
-            $( ".mr-auto .nav-item" ).each( function() {
-                $( this ).removeClass( "active" );
-            });
-            clickedItem.addClass( "active" );
-        });
-
-        $("#contactButton").click(function () {
-            alert("Coming soon");
-        });
-    });
-</script>
 {% endblock %}
