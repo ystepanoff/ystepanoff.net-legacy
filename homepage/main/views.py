@@ -36,9 +36,9 @@ def contact(request):
         message = request.POST.get('contactMessage')
 
         formatted_message = f"""
-            FROM: {name}
-            EMAIL: {email}
-            MESSAGE: {message}
+        FROM: {name}
+        EMAIL: {email}
+        MESSAGE: {message}
         """
 
         mail_command = f'echo "{formatted_message}" | s-nail -s "{name}" yegor@ystepanoff.net'

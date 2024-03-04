@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '4f15b03126c8f666802075a1f3d07a721611fe908b730d6a6914dc4349fba45cfc271d622c964fdaf991ef7eccc14debcaa69dd62512d5a2f8f339b359346e20'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ystepanoff.net']
 
