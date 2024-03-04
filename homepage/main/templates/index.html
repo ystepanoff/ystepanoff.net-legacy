@@ -88,6 +88,7 @@
 
                 <!-- form fields -->
                 <form id="contactForm">
+                    {% csrf_token %}
                     <input id="contactName" type="text" class="form-control mt-3" placeholder="Name">
                     <input id="contactEmail" type="email" class="form-control mt-3" placeholder="Email">
                     <div class="mb-3 mt-3">
