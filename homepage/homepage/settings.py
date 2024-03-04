@@ -131,19 +131,15 @@ LOGGING = {
             'format': '%(asctime)s %(levelname)s [%(name)s:%(lineno)s] %(module)s %(process)d %(thread)d %(message)s'
         }
     },
-    'handlers': {
-        'gunicorn': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'formatter': 'verbose',
-            'filename': '/var/log/gunicorn.error.log',
-            'maxBytes': 1024 * 1024 * 100,  # 100 mb
-        }
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+        },
     },
     'loggers': {
-        'gunicorn.errors': {
+        'root': {
             'level': 'DEBUG',
-            'handlers': ['gunicorn'],
+            'handlers': ['console'],
             'propagate': True,
         },
     }
