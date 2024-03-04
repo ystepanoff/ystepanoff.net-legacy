@@ -12,6 +12,7 @@ $(document).ready(function () {
             type: "POST",
             url: "/contact/",
             data: {
+                csrfmiddlewaretoken: $('input[name="csrfmiddlewaretoken"]').val(),
                 contactName: $("#contactName").val(),
                 contactEmail: $("#contactEmail").val(),
                 contactMessage: $("#contactMessage").val(),
