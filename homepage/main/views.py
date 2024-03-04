@@ -2,6 +2,7 @@ import os
 
 from django.core.paginator import Paginator
 from django.shortcuts import render
+from django.http import JsonResponse
 from .models import Project
 
 
@@ -42,5 +43,5 @@ def contact(request):
 
         mail_command = f'echo "{formatted_message}" | s-nail -s "{name}" yegor@ystepanoff.net'
         os.system(mail_command)
-    return ''
+    return JsonResponse({'status': 'OK'})
 
