@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '4f15b03126c8f666802075a1f3d07a721611fe908b730d6a6914dc4349fba45cfc271d622c964fdaf991ef7eccc14debcaa69dd62512d5a2f8f339b359346e20'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['ystepanoff.net']
 
@@ -123,24 +123,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': True,
-    'formatters': {
-        'verbose': {
-            'format': '%(asctime)s %(levelname)s [%(name)s:%(lineno)s] %(module)s %(process)d %(thread)d %(message)s'
-        }
-    },
-    "handlers": {
-        "console": {
-            "class": "logging.StreamHandler",
-        },
-    },
-    'loggers': {
-        'root': {
-            'level': 'DEBUG',
-            'handlers': ['console'],
-            'propagate': True,
-        },
-    }
-}
+APPEND_SLASH = False

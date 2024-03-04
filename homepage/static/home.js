@@ -10,7 +10,7 @@ $(document).ready(function () {
     $("#contactButton").click(function () {
         $.ajax({
             type: "POST",
-            url: "/contact",
+            url: "/contact/",
             data: {
                 contactName: $("#contactName").val(),
                 contactEmail: $("#contactEmail").val(),
