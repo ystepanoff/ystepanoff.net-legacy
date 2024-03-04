@@ -42,5 +42,5 @@ def contact(request):
 
         mail_command = f'echo "{formatted_message}" | s-nail -s "{name}" yegor@ystepanoff.net'
         os.system(mail_command)
-
+    return ''
 
