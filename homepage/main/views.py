@@ -7,7 +7,7 @@ from .models import Project
 
 
 def index(request):
-    projects = Project.objects.order_by('-id')
+    projects = Project.objects.order_by('id')
     paginator = Paginator(projects, 3)
     for page in paginator:
         print(list(page))
